@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Olá, mundo!</title>
+  </head>
+    <!-- navbar -->
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Logo da EA -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Logo EA" width="40" height="40" class="d-inline-block align-text-top">
+      </a>
+
+      <!-- Botão para menu colapsável em dispositivos móveis -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links da navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jogos.html">Jogos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Cadastrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="referencia.html">Referencia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+     <!-- navbar -->
+     <body>
+        <main>
+            <div id="imgtopo"><img src="img/chanpi.png" alt="" id="logo"></div>
+            <section>
+              <form for="player">Selecione um jogador
+                 <select name="player-select" id="player-select" onchange="trocaTema()">
+                    <option value="Cristiano Ronaldo">Cristiano Ronaldo</option>
+                        <option value="Lionel Messi">Lionel Messi</option>
+                        <option value="NeymarJr">Neymar Jr</option>
+                        <option value="Jude Bellingham">Jude Bellingham</option>
+                        <option value="vinicius junior">Vinicius Júnior</option>
+                        <option value="erling haaland">Erling Haaland</option>
+                        <option value="ronaldinho">Ronaldinho Gaúcho</option>
+                    </select>
+                    <button type="submit">Enviar</button>
+                </section>
+            </form>
+            <div id="player-info"></div>
+            </main>
+            
+            <form id="cartola">
+            <div><label for="opcionais">Monte seu time</label></div>
+            
+            <div>
+                <input type="checkbox" name="cr7" id="cr7" onchange="calc(950,this.checked)"> 
+                <label for="cr7">Cistiano Ronaldo</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" name="messi" id="messi" onchange="calc(1000,this.checked)"> 
+                <label for="messi">Lionel Messi</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" name="neymar" id="neymar" onchange="calc(999,this.checked)">
+                <label for="ney"> Neymar Jr</label>
+            </div>
+            
+            <div><input type="checkbox" name="jude" id="jude" onchange="calc(100,this.checked)"> Jude Bellingham</div>
+            
+            <div><input type="checkbox" name="vini" id="vini" onchange="calc(150,this.checked)"> Vinicius Júnior</div>
+            
+            <div><input type="checkbox" name="haaland" id="haaland" onchange="calc(100,this.checked)">Erling Haaland</div>
+            
+            <div><input type="checkbox" name="r10" id="r10" onchange="calc(1000,this.checked)">Ronaldinho</div>
+    
+            <p id="saida">
+                R$ <output id="total">0</output>
+            </p>
+            <button type="reset" class="bcartola">Limpar</button>
+            <button type="submit" class="bcar">Enviar</button>
+        </form>
+        <script src="jv/script.js"></script>
+        
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+

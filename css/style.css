@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --c1:#14223E;
+    --c2:#3968A5;
+    --c3:#78AAD8;
+    --c4:#BFDBBD;
+    --c5:#97C08C;
+    --c6:#0000;
+    --c7:#ffffff49;
+}
+
+
+body{
+  background-color: white;
+}
+
+form{
+text-align: center;
+margin-top: 45px;
+border-radius: 5px;
+}
+
+#player-info{
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--c7);
+    width: 500px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 0;
+    text-align: center;
+}
+
+#logo{
+    width: 160px;
+    margin: auto;
+}
+
+#imgtopo{
+    margin-top: 10px;
+    text-align: center;
+}
+
+button{
+ width: 100px;
+ color: black;
+ background-color: white ;
+ box-shadow: black 3px 3px 3px;
+}
+
+#imagens{
+   display: flex;
+   justify-content: center;
+}
+#foto{
+  width:200px;
+ 
+}
+
+main{
+    background-color: var(--c7);
+    width: 500px;
+    border-radius: 20px;
+    
+    margin:50px auto ;
+}
+
+#cartola{
+    margin-top: 100px;
+    background-color: var(--c7);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width:500px ;
+   margin: auto;
+   border-radius: 25px;
+
+
+}
+#messi{
+    position: relative;
+    right: 18px;
+}
+#neymar{
+    position: relative;
+    right: 25px;
+}
+
+#vini{
+    position: relative;
+    right: 8px;
+}
+
+#haaland{
+    position: relative;
+    right: 9px;
+}
+
+#r10{
+    position: relative;
+    right: 22px;
+}
+
+
+
+
+
+
+
